@@ -212,6 +212,7 @@ letter-spacing: 2.5px;
 }
 .home .home-content .left{
     width: 70%;
+    margin-top: 20px;
     
 }
 .home .home-content .right{
@@ -263,7 +264,7 @@ transform: scale(1.09);
     height: 80%;
     margin-top: 8px;
     display: flex;
-    margin-left: -7px;
+    margin-left: px;
     justify-items: center;
     /* border: 2px solid red; */
     background:linear-gradient(to right, rgb(0, 255, 0) ,rgb(255, 255, 1));
@@ -282,14 +283,14 @@ transform: scale(1.09);
     }
 }
 .home .home-content .box{
-    width: 250px;
-    height: 60px;
+    width: 230px;
+    height: 50px;
     border-radius: 7px;
    padding-right: 0;
     overflow: hidden;
     position: relative;
     margin-left: -530px;
-    margin: 60px;
+    margin: 60px 60px 60px -5px;
     /* border: 2px solid red; */
 }
 .home .home-content .box a{
@@ -312,7 +313,7 @@ padding: 0px 10px;
 height: 94%;
 /* padding-top: 8px; */
 margin-left: 1px;
-margin-top: -54px;
+margin-top: -47px;
 padding: 8px 2px 0px 2px;
 left: 2px;
 border-radius: 7px;
@@ -350,6 +351,7 @@ section{
 }
 .about .max-width, .services .max-width, .skill .max-width, .practice .max-width ,.contect .max-width{
     margin-top: 25px;
+
   
 }
 .about{
@@ -408,17 +410,22 @@ background: #fff;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    /* overflow: hidden; */
+   
     justify-content: space-around;
 }
 
 .about .about-content .left{ 
     overflow: hidden;
-    width: 45%; 
+    width: 45%;
+   
 }
 
 .about .about-content .left img{
     height: 400px;
     width: 400px;
+   
+
    box-shadow: 1px 1px 2px 3px #000;
     object-fit: cover;
     border-radius: 10px;
@@ -632,12 +639,12 @@ margin-bottom: 10px;
     color: #fc6d6d;
 }
 
-.skill .skill-content .right .bar , .practice .practice-content .right .bar {
+.skill .skill-content .right .bar {
     margin-bottom: 20px;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
 }
-.skill .skill-content .right .bar .info ,.practice .practice-content .right .bar  .info{
+.skill .skill-content .right .bar .info {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -646,7 +653,7 @@ margin-bottom: 10px;
 /* .skill .skill-content .right{
     width: 30%;
 } */
-.skill .skill-content .right .info i ,.practice-content .right .info i{
+.skill .skill-content .right .info i {
     font-size: 32px;
     color: #fc6d6d;
     transition: all 0.5s linear;
@@ -658,7 +665,7 @@ margin-bottom: 10px;
     transform: scale(1.1);
 }
 
-.skill .skill-content .right span, .practice .practice-content .right span {
+.skill .skill-content .right span {
     font-weight: 500;
    text-transform: capitalize;
     font-size: 30px;
@@ -1014,7 +1021,7 @@ footer span a:hover{
    
 
 }
- .home .home-content .right .left{
+ .home .home-content .colum{
      flex: 100%;
  }
 
@@ -1101,7 +1108,7 @@ margin-left:-3px;
     margin-bottom: 30px;
 }
 .about{
-    margin-top: -100%;
+    margin-top: -120%;
     transition: all 0.7s linear ;
     
     z-index: -10;
@@ -1147,6 +1154,7 @@ margin-left:-3px;
     }
     .home .home-content .text-3{
         font-size: 25px;
+        color: green;
       
     }
     .navbar .max-width{
@@ -1176,27 +1184,72 @@ margin-left:-3px;
     
 }
 @media(max-width:500px){
+    .home .home-content .text-1{
+        font-size: 17px;
+    }
+    
     .home .home-content .text-2{
-        font-size: 40px;
+        font-size: 27px;
   
     }
     .home .home-content .text-3{
-        font-size: 25px;
+        font-size: 20px;
+    }
+    .home .home-content .left{
+      
+        margin-left: -13px;
+        margin-top: -10px;
     }
     .navbar .max-width{
         padding: 0px 27px;
     }
-    /* .max-width{
+    .home .home-content .box{
+        width: 180px;
+        height: 50px;
+        border-radius: 7px;
+       padding-right: 0;
+        overflow: hidden;
+        position: relative;
+        margin-left: -570px;
+        margin: 60px 60px 60px -5px;
+        /* border: 2px solid red; */
+    }
+    
+    
+   
+     .home .home-content .box h4 {
+        color: #fff;
+        font-size: 25px;
+        width: 99%;
+        padding: 0px 10px;
+        height: 94%;
+        /* padding-top: 8px; */
+        margin-left: px;
+        margin-top: -47px;
+        padding: 8px 2px 0px 2px;
+        left: 0px;
+        border-radius: 7px;
+        z-index: 10;
+        position: relative;
+        background-color: #fc6d6d;
+        text-align: center;
+        z-index: 10;
+        transition:all 1s ease;
+        }
+       
+     .max-width{
         padding: 0 27px;
-    } */
-    .about .about-content .left{
-        border-radius: 8px;
+    }
+    
+    .dynamic-text{
+        margin-top: px;
     }
     .dynamic-text li{
         list-style: none;
-        font-size: 25px;
-        top: 10px;
+        font-size: 22px;
+        margin-top: -8px;
         font-weight: 500;
+        margin-left: -5px;
         color: #fc6d6d;
     }
     .about .about-content .left img{
@@ -1206,6 +1259,138 @@ margin-left:-3px;
         margin-right: 30%;
         
     }
-      
+    .home{
+        overflow: hidden;
+        background-image:url(adnan17.jpg);
+        
+    }
+    .navbar .logo a{
+        font-size: 20px;
+        margin-left: -20px;
+    }
+    .home .home-content .right{
+        width: 100%;
+        margin: -10px 10% 40px 60px;
+        
+        
+       
+    }
+    .home .home-content .right .inner-colock h1{
+        color: #fff;
+        letter-spacing: 1.3px;
+        font-size: 20px;
+    }
+    .home .home-content .box-clock{
+   
+        width: 150px;
+        height:40px;
+        margin-left: 30px;
+        margin-top: -32px;
+     }
+     
+     .home .home-content .colum{
+         flex: 100%;
+     }
+    
+    .home .home-content .right .inner-colock{
+    
+        width: 100%;
+        height: 100%;  
+        display:flex;
+        border-radius: 10px;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        background:transparent;
+        padding: 5px;
+        box-shadow: 1px 1px 5px 2px rgb(160, 152, 152);
+    transition: all 1s linear ;
+    }
+    .home .home-content .right .inner-colock:hover{
+    
+    transform: translateY(30px);
+    transform: scale(1.09);
+    }
+    .home .home-content .right .inner-colock p{
+        margin-top:1px;
+        font-size: 12px;
+    }
+    .home .home-content .inner-content{
+        display: flex;
+       
+        justify-content: space-between;
+        flex-wrap: wrap;
+    
+    }
+    .about .about-content .left{
+        border-radius: 8px;
+        padding: 5px;
+    }
+    .about .max-width, .skill .max-width, .services .max-width, .contect .max-width{
+        padding: 5px;
+        margin-top: -25px;
+    }
+    .about .about-content, .skill .skill-content , .services .serv-content, .contect .contect-content{ 
+/* overflow: hidden; */
 
-}
+width: 100%;
+padding: 5px;
+
+
+    }
+    .about .about-content .left{ 
+          width: 100%;
+        overflow: hidden;
+       
+        
+    }
+    .about .about-content .left img{
+        position: relative;
+       z-index: 20;
+    width: 100%;
+       box-shadow: 1px 1px 2px 3px #000;
+        object-fit: cover;
+        border-radius: 10px;
+       margin: 0px;
+     
+    }
+    .about .about-content .right .web1{
+font-size: 21px;
+    }
+    .about .about-content .right .text, .skill .skill-content .left .text, .contect .contect-content .left .text{
+        font-size: 21px;
+        margin-top: -20px;
+        color: green;
+       
+    }
+    .skill .skill-content .left .text{
+        font-size: 18px;
+    }
+    .about .about-content .right p, .serv-content .card p, .skill .skill-content .left p, .contect .contect-content .left p{
+        font-size: 13px;
+        word-spacing: 1px;
+        
+        
+    }
+    .skill .skill-content .right .info i {
+        font-size: 22px;
+    }
+    .skill .skill-content .right .info span{
+        font-size: 22px;
+    }
+    .acount-content .item span{
+        font-size: 17px;
+    }
+    .acount-content .item i{
+        font-size: 23px;
+        }
+        footer span{
+            font-size: 15px;
+        }
+        footer span a{
+            font-size: 20px;
+        }
+} 
+
+ 
